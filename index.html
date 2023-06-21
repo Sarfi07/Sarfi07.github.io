@@ -1,102 +1,146 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
-
-    <script>
-        var i = 0;
-        var txt = 'Thank you for visiting! for more Info. about me visit other pages from the navbar.';
-        var speed = 50;
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-        alert('Welcome hit ENTER to continue');
-    </script>
+    <title>Sarfaroj Ansari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Sarfaroj Ansari</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hobbies.html">Hobbies</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Social-Media Handles
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item"
-                                        href="https://www.youtube.com/channel/UCFe9CzfVGOYFiF8B2S2lyuQ">Youtube</a></li>
-                                <li><a class="dropdown-item" href="https://twitter.com/SarfarojAnsari3">Twitter</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://www.linkedin.com/in/sarfaroj-ansari-001a96237/">LinkedIn</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+        <nav>
+            <div class="logo">
+                <p>Sarfaroj</p>
             </div>
+            <ul class="nav-links">
+                <li class="nav-link" id="home-nav">Home</li>
+                <li class="nav-link" id="about-nav">About</li>
+                <li class="nav-link" id="projects-nav">Projects</li>
+                <li class="nav-link" id="contact-nav">Contact Me</li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="container text-center">
-            <img class="bImage" src="profile_image.jpg" alt="Background Image">
-            <div class="center">
-                <h1 class="intro">Hi! I am Sarfaroj Ansari<br></h1><hr>
-                    <h1>And
-                    I am a developer
-                    </h1>
-                    <hr>
-                    <button onclick="typeWriter()" type="button" class="btn btn-outline-primary">Click me</button>
-
-                </h1>
-                <p id="demo"></p>
+        <div class="section" id="home">
+            <div id="firstSection">
+                <div id="leftSection">Hi I am <span>Sarfaroj</span> and I am a
+                    <span id="element"></span>
+                </div>
+                <div id="rightSection"><img id="devImg" src="devImg.png" alt="">
+                </div>
+            </div>
+            <hr><br>
+            <div class="secondSection">
+                <div class="card">
+                    <div class="cardTitle">Python</div>
+                    <div class="cardDetails">
+                        <div><img class="cardImage" src="logos/pythonLogo.png" alt="python Logo"></div>
+                        <div class="cardDes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi iure
+                            recusandae nulla! Blanditiis cupiditate, cumque dolores atque, corrupti, id ut quaerat
+                            beatae quo mollitia rerum voluptates fugiat vero nostrum quae. Ipsum eligendi blanditiis
+                            accusamus perspiciatis aliquam nisi fugiat tempore consectetur. Corrupti mollitia corporis
+                            aliquid voluptas quis voluptatibus incidunt nulla adipisci fuga debitis alias ab, in iste?
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="card">
+                    <div class="cardTitle">django</div>
+                    <div class="cardDetails">
+                        <div><img class="cardImage" src="logos/djangoLogo.png" alt="django Logo"></div>
+                        <div class="cardDes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi iure
+                            recusandae nulla! Blanditiis cupiditate, cumque dolores atque, corrupti, id ut quaerat
+                            beatae quo mollitia rerum voluptates fugiat vero nostrum quae. Ipsum eligendi blanditiis
+                            accusamus perspiciatis aliquam nisi fugiat tempore consectetur. Corrupti mollitia corporis
+                            aliquid voluptas quis voluptatibus incidunt nulla adipisci fuga debitis alias ab, in iste?
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="card">
+                    <div class="cardTitle">HTML</div>
+                    <div class="cardDetails">
+                        <div><img class="cardImage" src="logos/htmlLogo.png" alt="HTML Logo"></div>
+                        <div class="cardDes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi iure
+                            recusandae nulla! Blanditiis cupiditate, cumque dolores atque, corrupti, id ut quaerat
+                            beatae quo mollitia rerum voluptates fugiat vero nostrum quae. Ipsum eligendi blanditiis
+                            accusamus perspiciatis aliquam nisi fugiat tempore consectetur. Corrupti mollitia corporis
+                            aliquid voluptas quis voluptatibus incidunt nulla adipisci fuga debitis alias ab, in iste?
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="card">
+                    <div class="cardTitle">CSS</div>
+                    <div class="cardDetails">
+                        <div><img class="cardImage" src="logos/cssLogo.png" alt="css Logo"></div>
+                        <div class="cardDes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi iure
+                            recusandae nulla! Blanditiis cupiditate, cumque dolores atque, corrupti, id ut quaerat
+                            beatae quo mollitia rerum voluptates fugiat vero nostrum quae. Ipsum eligendi blanditiis
+                            accusamus perspiciatis aliquam nisi fugiat tempore consectetur. Corrupti mollitia corporis
+                            aliquid voluptas quis voluptatibus incidunt nulla adipisci fuga debitis alias ab, in iste?
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="card">
+                    <div class="cardTitle">JavaScript</div>
+                    <div class="cardDetails">
+                        <div><img class="cardImage" src="logos/javaScriptLogo.png" alt="JavaScript Logo"></div>
+                        <div class="cardDes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi iure
+                            recusandae nulla! Blanditiis cupiditate, cumque dolores atque, corrupti, id ut quaerat
+                            beatae quo mollitia rerum voluptates fugiat vero nostrum quae. Ipsum eligendi blanditiis
+                            accusamus perspiciatis aliquam nisi fugiat tempore consectetur. Corrupti mollitia corporis
+                            aliquid voluptas quis voluptatibus incidunt nulla adipisci fuga debitis alias ab, in iste?
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </div>
+        <div class="section" id="about" style="height:90vh; background-color: white;text-align: center; display: none;">
+            <h1>About</h1>
+            <br><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla officia obcaecati reprehenderit vero veniam iusto omnis repudiandae ea asperiores a! Ullam soluta ducimus nesciunt quia vel voluptate eos eaque illum sapiente hic quod accusamus enim, ut quo tenetur repudiandae recusandae eius, culpa nulla vero itaque et quidem? Necessitatibus maxime, hic totam aut, consequuntur ipsa optio sapiente, aliquid accusantium earum veniam nemo recusandae in repellat esse nisi at. Dolor laudantium, dolore aspernatur sunt vero minus, architecto error deleniti, facere rem sit culpa. Architecto reiciendis doloremque repellendus veniam a rem modi earum, et, impedit obcaecati quia aliquam recusandae magnam quas fugit tenetur saepe distinctio illo dolorum! Iusto repellendus aut numquam amet ducimus doloribus fugit, mollitia, sapiente labore modi aperiam eum voluptates exercitationem earum molestias blanditiis dolore eius porro minus perspiciatis aliquid nulla quod distinctio. Voluptates totam quam fugit quos. Animi ea ratione, dolore rerum ab accusamus nostrum nobis! Voluptatem pariatur ut harum facere itaque quis libero soluta excepturi, repudiandae illo totam, facilis quas temporibus quasi ad minus maxime. Voluptatibus error ratione eius nostrum ipsam dignissimos ut voluptate quaerat at sit. Labore veniam earum quia quam eos ipsa hic harum dolores natus. Vitae id ex quas voluptas recusandae ipsam consequatur tenetur. Enim, aspernatur, ducimus saepe praesentium impedit, labore illum asperiores voluptatibus minima magnam tempore adipisci quia vero laborum voluptate doloremque! Nisi laboriosam placeat dicta exercitationem a reiciendis maxime expedita molestias inventore aliquam fugiat commodi eligendi sequi neque suscipit molestiae perspiciatis officia, est officiis culpa! Voluptatibus
+        </div>
+        <div class="section" id="projects" style="height:90vh; background-color: white; text-align: center; display: none;">
+            <h1>Projects</h1>
+            <br><br><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolores voluptatum nam corporis nobis doloremque, veritatis distinctio accusantium ipsum praesentium? Non nisi vel atque eos laudantium sit suscipit deserunt, veritatis qui magni cupiditate placeat earum sed doloremque debitis nulla iste? Magni, eum dolorum! Odit ea nisi numquam, et explicabo temporibus dolore nihil velit necessitatibus quo repellendus modi veritatis vero, esse doloremque non quis tempora minus ducimus repudiandae fugiat! Quibusdam, error quos! Laborum nam consequuntur impedit ex eius! Modi suscipit fugiat ipsa perferendis provident ratione vel facilis voluptatum, cumque amet natus, quos id maxime! Dolor iure incidunt suscipit dolorum, laudantium sit quaerat cumque pariatur! A voluptatum aut magni. Provident quae aliquam itaque perspiciatis libero officia rem voluptatibus, omnis harum reprehenderit culpa. Dolore nulla voluptate quam eligendi, perferendis mollitia eum laudantium corporis qui ullam, molestiae neque, officiis quas ipsum doloremque asperiores eius vero vitae recusandae. Tempora, quaerat repellendus ab obcaecati nesciunt voluptatibus consequatur! Magnam, ab? Ipsa quasi fuga assumenda nam beatae harum, molestias facilis labore necessitatibus porro ad laboriosam perspiciatis natus quibusdam omnis mollitia veniam soluta, saepe ipsam ducimus! Deserunt quas nesciunt ea animi doloribus nostrum incidunt nobis possimus sunt vitae, voluptatum quia, praesentium explicabo. Velit cupiditate culpa, vero quis eaque veritatis.
+
+        </div>
+        <div class="section" id="contactMe" style="height:90vh; background-color: white;text-align: center; display: none;">
+            <h1>Contact Me</h1>
+            <br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati tempore possimus ipsam repellat iure, molestias iste natus in recusandae accusamus quisquam, illum nobis ipsa accusantium. Quam enim odio est?
+        </div>
+
+
     </main>
-    <footer></footer>
+    <footer>
+        footer text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque temporibus eos delectus itaque recusandae non neque optio consectetur, hic incidunt!
+    </footer>
+    <script src="index.js"></script>
+    <!-- Element to contain animated typing -->
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>React Developer</i>', 'Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
 </body>
 
 </html>
