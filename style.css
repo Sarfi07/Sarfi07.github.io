@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body  {
+    background-color: rgb(241, 241, 244);
+    color: rgb(3, 3, 3);
+}
+
+/* nav */
+
+nav {
+
+    background-color: rgb(26, 26, 78);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+    color: white;
+
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li{
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: rgb(79, 79, 134)
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Main */
+#firstSection {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#leftSection {
+
+    height: 50vh;
+    width:40%;
+    text-align: center;
+    margin: 25px;
+    font-size: 4rem;
+    padding: 100px 0;
+    font-weight: bold;
+    /* background-colos */
+
+}
+#leftSection > span {
+    color: rgb(129, 3, 129)
+}
+
+
+#rightSection {
+
+    height: 50vh;
+    width:40%;
+    text-align: center;
+    margin: 25px;
+    /* background-color: red; */
+}
+
+
+#devImg {
+    height:  70vh;
+    width: 100%
+}
+
+.secondSection {
+   
+    width: 90vw;
+    margin: auto;
+}
+/* 
+Card */
+
+.cardTitle {
+    font-size:x-large;
+}
+.cardDetails {
+    display: flex;
+}
+.cardImage {
+    height:200px;
+    width: 200px;
+    margin: 0 25px;
+
+}
+.cardDes {
+    display: inline;
+
+}
+
+
+footer {
+    background-color: rgb(33, 32, 32);
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: static;
+}
